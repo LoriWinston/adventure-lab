@@ -2,7 +2,8 @@ const capybaras = {
     id: 'capybaras',
     title: 'A Pile of Baby Capybaras',
     map: {
-
+        top: '17%',
+        left: '37%'
     },
     image: 'capybaras.jpg',
     description: `You mosey along until you come upon a pile of baby capybaras. They are quite fluffy and are not currently being petted. What do you do?
@@ -35,7 +36,8 @@ const nextGen = {
     id: 'next-gen',
     title: 'Jean-Luc Picard and Data hanging out in 10 Forward',
     map: {
-
+        top: '89%',
+        left: '44%'
     },
     image: 'picarddata.jpg',
     description: `You journey on, minding your own business until you come upon a cool-looking space bar. Turns out it's 10 Forward from Next Generation era Star Trek, imagine your luck! Inside you find Jean-Luc Picard and Data looking pretty bored. What do you do?
@@ -66,8 +68,10 @@ const nextGen = {
 
     const bmo = {
         id: 'bmo',
-        title: 'Bmo from Adventure Time'
+        title: 'Bmo from Adventure Time',
         map: {
+            top: '17%',
+            left: '37%'
         },
         image: 'bmo.jpg',
         description: `You walk (or fly, either way) until you come across BMO from Adventure Time. They are trying to write a song but not having much luck. What do you do?
