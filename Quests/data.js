@@ -17,11 +17,11 @@ const capybaras = {
         hearts: 50,
     }, {
         id: 'pet-them-a-whole-lot',
-        description: 'Pet the baby capybaras like A BUNCH'
+        description: 'Pet the baby capybaras like A BUNCH',
         result: `The baby capybaras really appreciate the extra pets. They climb on your lap and everyone has a nice, refreshing nap.
         `,
         coolpoints: 7000,
-        hearts: 300,
+        hearts: 300, 
     }, {
         id: 'no-pet',
         description: 'Continue on your way without petting the capybaras',
@@ -61,7 +61,7 @@ const nextGen = {
         description: 'You stare at the floor and shuffle your feet a bit until they eventually start staring at a space bird and forget you are there.',
         result: `The biggest loss you sustain is the missed opportunity for friendship (space friendship, especially)
             `,
-        coolpoints: -35,
+        coolpoints: 0,
         hearts: 0,
         }]
 };
@@ -78,7 +78,7 @@ const nextGen = {
         `,
         choices = [{
             id: 'ukelele',
-            description: 'Bust out a ukelele and get to work',
+            description: 'Get to work song writin',
             result: `You grab your ukelele and start to jam. Your creative energy is so powerful that together you create THEE BEST SONG ever
             `,
             coolpoints: 9000,
@@ -88,7 +88,7 @@ const nextGen = {
             description: 'Mumble something about being busy and turn to leave',
             result: `You discover it is possible to break the heart of a robot. Wow.
             `,
-            coolpoints: -5000,
+            coolpoints: -100,
             hearts: 0,
         }, {
             id: 'distraction',
