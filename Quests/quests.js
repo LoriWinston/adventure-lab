@@ -1,41 +1,27 @@
 import { findById } from '../utils.js';
-import { quests } from './data.js';
+import { quests } from '../Data/data.js';
 
 const quest = findById(quests, questId);
 
+
+const h1 = document.querySelector('h1');
+const p = document.querySelector('p');
 const title = document.getElementById('title');
-const image = document.getElementById('image');
 const description = document.getElementById('description');
-const choiceForm = document.getElementById('choice-form');
+const form = document.getElementById('form');
 const choices = document.getElementById('choices');
 const result = document.getElementById('result');
 const resultDescription = document.getElementById('result-description');
-
-const params = new URLSearchParams(window.location.search);
-const questId = params.get('id');
-
-/*
-import { findById } from '../utils.js';
-import quests from '../data.js';
-const h1 = document.querySelector('h1');
-const p = document.querySelector('p');
-const img = document.querySelector('section img');
-const form = document.querySelector('form');
-const resultsSpan = document.querySelector('#results-span');
 const backToMap = document.querySelector('#back-to-map');
 
-// - Grab the id of the quest from the URL
 const params = new URLSearchParams(window.location.search);
-// get the value of the id key in the URL quesry string
 const questId = params.get('id');
 
-// - Use that id to `findById` that quest in our quest data
 const quest = findById(quests, questId);
-// - Use the quest to populate the elements of the html
 
 h1.textContent = quest.title;
 p.textContent = quest.description;
-img.src = `../assets/${quest.image}`;
+img.src = `../assets/${quest.image}`; 
 
 for (let choice of quest.choices) {
     const radio = document.createElement('input');
@@ -63,23 +49,21 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     const formData = new FormData(form);
-    // - On submit,
-    //     - Calculate the user's new stats (HP and gold)
     const selectionId = formData.get('choices');
-    // go get the data about this choice
     const choice = findById(quest.choices, selectionId);
     const user = JSON.parse(localStorage.getItem('USER'));
 
-    user.hp += choice.hp;
-    user.gold += choice.gold;
-    // use the selectionId to set the property dynamically
+    user.coolpoints += choice.coolpoints;
+    user.hearts += choice.hearts;
+  
     resultsSpan.textContent = choice.result;
     user.completed[questId] = true;
 
-    //     - Put the new stats in local storage
+
     localStorage.setItem('USER', JSON.stringify(user));
 });
 
 backToMap.addEventListener('click', () => {
     window.location = '../map';
-}); */
+}); 
+

@@ -9,9 +9,26 @@
     <title>Quests</title>
 </head>
 <body>
-    <section class="main-section">
-        Quests!
+    <h1>Adventure Quest</h1><br>
+    <div class="profile">
+        <span id="name"></span>
+        coolpoints:<span id="coolpoints"></span><br>
+        hearts: <span id="hearts"></span>
+    </div>
+</header>
+
+<main> 
+    <h2 id="title"></h2>
+    <p id="description"></p>
+    <form id="choice-form">
+        <p id="choices"></p>
+        <button>Choose</button>
+    </form>
+    <section id="result" class="hidden">
+        <p id="result-description"></p>
+        <a href="../map">Back to Map</a>
     </section>
-    <script type="module" src="./data.js"></script>
+</main>
+    <script type="module" src="../home/home.js"></script>
 </body>
 </html>
