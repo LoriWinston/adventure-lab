@@ -3,7 +3,7 @@
 function makeUser(formData) {
     const user = {
         name: formData.get('name'),
-        race: formData.get('character'),
+        character: formData.get('character'),
         coolpoints: 500,
         hearts: 50,
         completed: {}
@@ -14,7 +14,7 @@ function makeUser(formData) {
 
 export const newMakeUser = (formData) => ({
     name: formData.get('name'),
-    race: formData.get('character'),
+    character: formData.get('character'),
     coolpoints: 500,
     hearts: 50,
     completed: {}
