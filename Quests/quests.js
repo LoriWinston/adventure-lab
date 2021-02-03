@@ -1,7 +1,7 @@
 import { findById } from '../utils.js';
-import { quests } from '../Data/data.js';
+import quests from '../Data/data.js';
 
-const quest = findById(quests, questId);
+// const quest = findById(quests, questId);
 
 
 const h1 = document.querySelector('h1');
@@ -16,9 +16,8 @@ const backToMap = document.querySelector('#back-to-map');
 
 const params = new URLSearchParams(window.location.search);
 const questId = params.get('id');
-
 const quest = findById(quests, questId);
-
+console.log(questId);
 h1.textContent = quest.title;
 p.textContent = quest.description;
 img.src = `../assets/${quest.image}`; 

@@ -33,7 +33,7 @@ const capybaras = {
 };
 
 const nextGen = {
-    id: 'next-gen',
+    id: 'nextGen',
     title: 'Jean-Luc Picard and Data hanging out in 10 Forward',
     map: {
         top: '89%',
@@ -56,55 +56,55 @@ const nextGen = {
         `,
         coolpoints: 5000,
         hearts: 50,
-        }, {
+    }, {
         id: 'stare-at-the-floor',
         description: 'You stare at the floor and shuffle your feet a bit until they eventually start staring at a space bird and forget you are there.',
         result: `The biggest loss you sustain is the missed opportunity for friendship (space friendship, especially)
             `,
         coolpoints: 0,
         hearts: 0,
-        }]
+    }]
 };
 
-    const bmo = {
-        id: 'bmo',
-        title: 'Bmo from Adventure Time',
-        map: {
-            top: '17%',
-            left: '37%'
-        },
-        image: 'bmo.jpg',
-        description: `You walk (or fly, either way) until you come across BMO from Adventure Time. They are trying to write a song but not having much luck. What do you do?
+const bmo = {
+    id: 'bmo',
+    title: 'Bmo from Adventure Time',
+    map: {
+        top: '17%',
+        left: '37%'
+    },
+    image: 'bmo.jpg',
+    description: `You walk (or fly, either way) until you come across BMO from Adventure Time. They are trying to write a song but not having much luck. What do you do?
         `,
-        choices = [{
-            id: 'ukelele',
-            description: 'Get to work song writin',
-            result: `You grab your ukelele and start to jam. Your creative energy is so powerful that together you create THEE BEST SONG ever
+    choices: [{
+        id: 'ukelele',
+        description: 'Get to work song writin',
+        result: `You grab your ukelele and start to jam. Your creative energy is so powerful that together you create THEE BEST SONG ever
             `,
-            coolpoints: 9000,
-            hearts: 500,
-        }, {
-            id: 'disappoint',
-            description: 'Mumble something about being busy and turn to leave',
-            result: `You discover it is possible to break the heart of a robot. Wow.
+        coolpoints: 9000,
+        hearts: 500,
+    }, {
+        id: 'disappoint',
+        description: 'Mumble something about being busy and turn to leave',
+        result: `You discover it is possible to break the heart of a robot. Wow.
             `,
-            coolpoints: -100,
-            hearts: 0,
-        }, {
-            id: 'distraction',
-            description: 'Point to a nearby diversion in an attempt to distract from your lack of musical prowess',
-            result: `Though successfully distracted, an opportunity to bond with a robot is lost. Kinda a bummer, really
+        coolpoints: -100,
+        hearts: 0,
+    }, {
+        id: 'distraction',
+        description: 'Point to a nearby diversion in an attempt to distract from your lack of musical prowess',
+        result: `Though successfully distracted, an opportunity to bond with a robot is lost. Kinda a bummer, really
             `,
-            coolpoints: 0,
-            hearts: 0,
-        }]
-    };
+        coolpoints: 0,
+        hearts: 0,
+    }]
+};
 
-    const quests = [
-        capybaras,
-        nextGen,
-        bmo,
-    ];
+const quests = [
+    capybaras,
+    nextGen,
+    bmo,
+];
 
-    export default quests;
+export default quests;
 

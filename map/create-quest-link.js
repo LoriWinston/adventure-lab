@@ -6,7 +6,7 @@ function createQuestLink(quest) {
     // const searchParams = new URLSearchParams();
     // searchParams.set('id', quest.id);
     // link.href = 'quest?' + searchParams.toString();
-    link.href = '../quest/?id=' + quest.id;
+    link.href = '../Quest/?id=' + quest.id;
 
     link.style.top = quest.map.top;
     link.style.left = quest.map.left;
